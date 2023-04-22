@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/GraySound"
+        android:layout_width="87dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.159"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:srcCompat="@drawable/gray" />
+
+    <ImageView
+        android:id="@+id/grayHumidity"
+        android:layout_width="87dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grayTemp"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gray" />
+
+    <ImageView
+        android:id="@+id/purpBarBackground"
+        android:layout_width="421dp"
+        android:layout_height="110dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/purpleBackground"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/purpbackground" />
+
+    <ImageView
+        android:id="@+id/grayPerson"
+        android:layout_width="87dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/GraySound"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gray" />
+
+    <ImageView
+        android:id="@+id/grayTemp"
+        android:layout_width="87dp"
+        android:layout_height="111dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/gray"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.16"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/grayPerson"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/gray" />
+
+    <ImageView
+        android:id="@+id/soundImage"
+        android:layout_width="37dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="70dp"
+        android:contentDescription="@string/soundimage"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.21"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/GraySound"
+        app:layout_constraintVertical_bias="0.060000002"
+        app:srcCompat="@drawable/vector_sound_png_image_file" />
+
+    <ImageView
+        android:id="@+id/person"
+        android:layout_width="61dp"
+        android:layout_height="76dp"
+        android:contentDescription="@string/personicon"
+        app:layout_constraintBottom_toBottomOf="@+id/grayPerson"
+        app:layout_constraintEnd_toEndOf="@+id/grayPerson"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toStartOf="@+id/grayPerson"
+        app:layout_constraintTop_toBottomOf="@+id/GraySound"
+        app:layout_constraintVertical_bias="0.52"
+        app:srcCompat="@drawable/person_icon_person_icon_clipart_image_from_our_icon_clipart_category__9" />
+
+    <ImageView
+        android:id="@+id/temperature"
+        android:layout_width="56dp"
+        android:layout_height="78dp"
+        android:contentDescription="@string/tempicon"
+        app:layout_constraintBottom_toTopOf="@+id/grayHumidity"
+        app:layout_constraintEnd_toEndOf="@+id/grayTemp"
+        app:layout_constraintHorizontal_bias="0.57"
+        app:layout_constraintStart_toStartOf="@+id/grayTemp"
+        app:layout_constraintTop_toBottomOf="@+id/grayPerson"
+        app:layout_constraintVertical_bias="0.53"
+        app:srcCompat="@drawable/_158502" />
+
+    <ImageView
+        android:id="@+id/humidity"
+        android:layout_width="66dp"
+        android:layout_height="60dp"
+        android:contentDescription="@string/humidityicon"
+        app:layout_constraintBottom_toBottomOf="@+id/grayHumidity"
+        app:layout_constraintEnd_toEndOf="@+id/grayHumidity"
+        app:layout_constraintHorizontal_bias="0.4"
+        app:layout_constraintStart_toStartOf="@+id/grayHumidity"
+        app:layout_constraintTop_toTopOf="@+id/grayHumidity"
+        app:layout_constraintVertical_bias="0.48000002"
+        app:srcCompat="@drawable/_50753" />
+
+    <TextView
+        android:id="@+id/peopleCount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="6dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/noValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.369"
+        app:layout_constraintStart_toEndOf="@+id/grayPerson"
+        app:layout_constraintTop_toBottomOf="@+id/loudnessValue" />
+
+    <TextView
+        android:id="@+id/loudnessValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/GraySound"
+        app:layout_constraintTop_toBottomOf="@+id/CurrentRoomData"
+        app:layout_constraintVertical_bias="0.128" />
+
+    <TextView
+        android:id="@+id/temperatureValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="88dp"
+        android:text="@string/noValue"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/grayTemp"
+        app:layout_constraintTop_toBottomOf="@+id/peopleCount" />
+
+    <TextView
+        android:id="@+id/humidityValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/noValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/grayHumidity"
+        app:layout_constraintTop_toBottomOf="@+id/temperatureValue"
+        app:layout_constraintVertical_bias="0.306" />
+
+    <TextView
+        android:id="@+id/CurrentRoomData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Current_Room_Data"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+
+    <ImageButton
+        android:id="@+id/settingsButton"
+        android:layout_width="95dp"
+        android:layout_height="77dp"
+        android:background="@null"
+        android:contentDescription="@string/settinIcon"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.091"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.961"
+        app:srcCompat="@drawable/mindre" />
+
+    <ImageButton
+        android:id="@+id/mainButton"
+        android:layout_width="95dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="24dp"
+        android:background="@null"
+        android:contentDescription="@string/mainIcon"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/settingsButton"
+        app:srcCompat="@drawable/_103533" />
+
+    <ImageButton
+        android:id="@+id/connectButton"
+        android:layout_width="77dp"
+        android:layout_height="77dp"
+        android:layout_marginBottom="24dp"
+        android:background="@null"
+        android:contentDescription="@string/connectIcon"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.493"
+        app:layout_constraintStart_toEndOf="@+id/mainButton"
+        app:srcCompat="@drawable/_3158" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

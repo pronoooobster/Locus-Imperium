@@ -1,8 +1,8 @@
 # Arduino
 .DS_Store
-bin/*/
-*build-*
-*build*
+bin//
+src/WIOTerminal/build-*
+src/WIOTerminal/build
 *~
 build-tmp/
 Makefile
@@ -60,11 +60,42 @@ debug.txt
 *.lai
 *.la
 *.a
-*.lib
+.lib
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+hs_err_pid
 replay_pid*
 
 # Visual Studio Code
 .vscode
+
+# Gradle files
+src/Locus Imperium/.gradle/
+src/Locus Imperium/app/build/
+
+# Local configuration file (sdk path, etc)
+local.properties
+
+# Android Studio generated files and folders
+src/Locus Imperium/captures/
+src/Locus Imperium/.externalNativeBuild/
+src/Locus Imperium/.cxx/
+*.apk
+output.json
+
+# IntelliJ
+*.iml
+src/Locus Imperium/.idea/
+misc.xml
+deploymentTargetDropDown.xml
+render.experimental.xml
+
+# Keystore files
+*.jks
+*.keystore
+
+# Google Services (e.g. APIs or Firebase)
+google-services.json
+
+# Android Profiling
+*.hprof
