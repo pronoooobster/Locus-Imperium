@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">Locus Imperium</string>
+    <string name="Current_Room_Data">Current Room Data</string>
+    <string name="isConnected">Imperium device connected</string>
+    <string name="gray">Gray</string>
+    <string name="soundimage">soundImage</string>
+    <string name="personicon">personIcon</string>
+    <string name="tempicon">tempIcon</string>
+    <string name="humidityicon">humidityIcon</string>
+    <string name="noValue">N/A</string>
+    <string name="SelectLoudness">Select Loudness</string>
+    <string name="selectTemp">Maximum Temperature</string>
+    <string name="selectHumidity">Maximum Humidity</string>
+    <string name="selectUnits">Maximum Amount Of People</string>
+    <string name="EnterHere">Enter Here</string>
+    <string name="purpleBackground">purple background</string>
+    <string name="settinIcon">Setting Icon</string>
+    <string name="mainIcon">Main Icon</string>
+    <string name="connectIcon">Connect Icon</string>
+    <string name="EnterIpBox">Enter IP Address Of The Broker</string>
+    <string name="enterIPText">Enter IP Address Of The Broker</string>
+    <string name="rawText">Click Below</string>
+    <string-array name="diffrentLoudness">
+        <item>Quiet</item>
+        <item>Moderate</item>
+        <item>Loud</item>
+    </string-array>
+
+</resources>
